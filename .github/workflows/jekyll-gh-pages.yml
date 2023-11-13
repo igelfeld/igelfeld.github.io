@@ -49,6 +49,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+git ad.
 
     # Website settings 
 url: "https://igelfeld.github.io/"
@@ -96,3 +97,5 @@ plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-paginate
+
+  git commit -m
