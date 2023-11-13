@@ -49,3 +49,50 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+
+    # Website settings 
+url: "https://igelfeld.github.io/"
+
+# Internal nav
+nav:
+  main:
+    about: "/about"
+    translation: "/translation"
+    research: "/research"
+    editing: "/editing"
+    contact: "/contact"
+
+# Bio settings
+name: "Catriona Corke"
+description: "The homepage of Catriona Corke, Researcher & Translator"
+website_repo_url: "https://github.com/igelfeld/igelfeld.github.io"
+
+# URLs
+contact_urls:
+  twitter:
+    url: "https://twitter.com/clcorke"
+    label: "Twitter"
+    icon: "twitter-square"
+    username: "@clcorke"
+    
+# Read files
+include:
+  - _pages
+  - files
+exclude:
+  - Gemfile
+  - README.md
+  - .gitignore
+keep_files:
+  - .git
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-paginate
