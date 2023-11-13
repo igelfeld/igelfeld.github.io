@@ -34,9 +34,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-
-      git add .
-
+git add .
     # Website settings 
 url: "https://igelfeld.github.io/"
 
