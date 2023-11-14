@@ -1,0 +1,48 @@
+# Website settings 
+url: "https://igelfeld.github.io"
+
+# Internal nav
+nav:
+  main:
+    research: "/research"
+    translation: "/translation"
+    editing: "/editing"
+
+# Bio settings
+name: "Catriona Corke"
+description: "The homepage of Catriona Corke, researcher and translator based in Berlin"
+website_repo_url: "https://github.com/igelfeld/igelfeld.github.io"
+
+# URLs
+contact_urls:
+  twitter:
+    url: "https://twitter.com/clcorke"
+    label: "Twitter"
+    icon: "twitter-square"
+    username: "@clcorke"
+  linkedin:
+    url: "https://www.linkedin.com/in/catriona-corke-phd-78229a6a/"
+    label: "LinkedIn"
+    icon: "linkedin-square"
+  
+# Read files
+include:
+  - _pages
+  - files
+exclude:
+  - Gemfile
+  - README.md
+  - .gitignore
+keep_files:
+  - .git
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-paginate
